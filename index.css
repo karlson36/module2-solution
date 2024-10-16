@@ -1,0 +1,68 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-item {
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    position: relative;
+}
+
+.menu-item .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ccc;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.chicken .title {
+    background-color: #f8b8b8;
+}
+
+.beef .title {
+    background-color: #ffcccc;
+}
+
+.sushi .title {
+    background-color: #fff2cc;
+}
+
+/* Медиа-запросы для планшетов */
+@media (max-width: 991px) {
+    .menu-item {
+        width: 45%;
+    }
+
+    .menu-item:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 767px) {
+    .menu-item {
+        width: 100%;
+    }
+}
